@@ -1,0 +1,196 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset1 Cambria Math;}{\f3\fnil\fcharset0 Cambria Math;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.10586}{\*\mmathPr\mmathFont2\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs30\lang22 Quest\'e3o 1\b0\fs22\par
+Programa\'e7\'e3o funcional \'e9 um paradigma de programa\'e7\'e3o com foco em dizer o que deve ser feito ao inv\'e9s de como deve ser feito. A Programa\'e7\'e3o funcional baseia-se no conceito matem\'e1tico usando \'e1lgebra e fun\'e7\'f5es, aplica\'e7\'e3o de fun\'e7\'e3o em fun\'e7\'e3o e al\'e9m disso n\'e3o possui o conceito de "vari\'e1veis \tab de estado". \line Ela possui como \b Vantagens:\b0  \line - Um alto n\'edvel de abstra\'e7\'e3o, especialmente quando as fun\'e7\'f5es s\'e3o utilizadas, suprimindo muitos detalhes da programa\'e7\'e3o e minimizando a probabilidade da ocorr\'eancia de muitas classes de erros.\line -A n\'e3o depend\'eancia das opera\'e7\'f5es de atribui\'e7\'e3o permite aos programas avalia\'e7\'f5es nas mais diferentes ordens. \line -A aus\'eancia de opera\'e7\'f5es de atribui\'e7\'e3o torna os programas funcionais muito mais simples para provas e an\'e1lises matem\'e1ticas do que os programas procedurais.\line -Paraleliza\'e7\'e3o e concorr\'eancia de c\'f3digo s\'e3o mais simples.\line -Composi\'e7\'e3o de fun\'e7\'f5es \'e9 uma forma simples de otimiza\'e7\'e3o.\line -\f1  F\f0\'e1cil de extrair modelos, fazendo com que c\'f3digos funcionais tenham mais garantias durante o processo de compila\'e7\'e3o.\par
+\b Desvantagens:\b0\line -Menor efici\'eancia.\line -Problemas que envolvam muitas vari\'e1veis (ex. contas de banco) ou muitas atividades seq\'fcenciais s\'e3o muitas vezes mais f\'e1ceis de se trabalhar com programas procedurais ou programas orientados a objeto.\line -Dif\'edcil de prever performace e requisitos.\line -\f1 Efeitos colaterais s\f0\'e3o \'fateis.\par
+\par
+\b\fs30 Quest\'e3o 2\par
+\b0\fs22 As principais caracter\'edsticas das linguagens funcionais s\'e3o:\line\b -\f1 Fun\f0\'e7\'f5es puras:\b0  Se uma fun\'e7\'e3o for chamada com os mesmos argumentos, ela sempre ir\'e1 retornar o mesmo valor.\line\tab\line\tab soma a b = a + b\line\line\b -\f1 Fun\f0\'e7\'f5es de ordem maior:\b0  Fun\'e7\'f5es podem retornar fun\'e7\'f5es e receber fun\'e7\'f5es como argumentos.\line\line Fatorial(n) = \{1      n = 0\line\tab           Fatorial(n \f2\u8722?\f0  1) n > 0\}\par
+f\f3  \f0 a\f3  \f0 t\f3  \f0 o\f3  \f0 r\f3  \f0 i\f3  \f0 a\f3  \f0 l\f3  \f0 0\f3  = \f0 1\par
+f\f3  \f0 a\f3  \f0 t\f3  \f0 o\f3  \f0 r\f3  \f0 i\f3  \f0 a\f3  \f0 l\f3  \f0 n\f3  = \f0 n\f3  \f0 *\f3  \f0 f\f3  \f0 a\f3  \f0 t\f3  \f0 o\f3  \f0 r\f3  \f0 i\f3  \f0 a\f3  \f0 l\f3  ( \f0 n\f2\u8722?\f0 1\f3 )\f0\lang22\par
+\line\b -\f1 Estados imut\f0\'e1veis:\b0  Uma vez que o valor de uma vari\'e1vel for definido ele n\'e3o pode ser modificado. O programa n\'e3o deve ter efeitos colaterais.\line\b -\f1 Composi\f0\'e7\'e3o de fun\'e7\'f5es:\b0  A partir de duas fun\'e7\'f5es \'e9 poss\'edvel gerar uma nova fun\'e7\'e3o que execute as duas de forma simult\'e2nea.\par
+soma1 = ( + ) 1\par
+numero_par n\par
+\tab | n \lquote mod\lquote  2 == 0 = True\par
+\tab | otherwise = False\par
+numeros_1 = map soma1 numeros\par
+\tab\f2 numeros_1 = [ 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 1 0 , 1 1 ]\par
+numeros_2 = f i l t e r numero_par numeros\par
+\f3\lang1046\tab\f2  numeros_2 = [ 2 , 4 , 6 , 8 , 1 0 ]\f0\lang22\par
+\b\fs30 Quest\'e3o 3\par
+\b0\fs22 Alguns exemplo de empresas que utilizam de linguagens funcionais s\'e3o: \line Apple, que utiliza a linguagem Swift, \'e9 utilizada para desenvolvimento de programas para IOS e OS X; \line O Facebook utiliza linguagens funcionais para diversas tarefas: \f1 Sigma: O filtro de spam, malware e outras coisas abusivas\f0\lang1046  \f1\lang22 utilizava FXL para estabelicimento de regras, depois ela foitrocada por Haskell por oferecer mais vantagens e\f0\lang1046  \f1\lang22 funcionalidades\f0\lang1046 ; E o\f1\lang22  Twitter\f0\lang1046  que\f1\lang22  fez algo semelhante\f0\lang1046  ao facebook, porem\f1\lang22  em Scala\f0\lang1046 .\lang22\par
+\b\fs30 Quest\'e3o 4\par
+\b0\fs22 A programa\'e7\'e3o orientada a objetos \'e9 uma programa\'e7\'e3o imperativa que considera estrutura de dados e que atrav\'e9s de comandos espec\'edficos para o computador esse estado vai sendo alterado no decorrer do programa, de como que ao final da exeu\'e7\'e3o ele represente uma sequ\'eancia de processos l\'f3gicos. o ponto central da linguagem de programa\'e7\'e3o \'e9  a a orienta\'e7\'e3o a objetos, pois todo fluxo l\'f3gico do programa baseia em quais objetos existem e como eles interagem entre si a medida que se interagem entre si. Vale lembrar que a programa\'e7\'e3o orientada a objetos possui classe, tem como conseito n\'e3o ter vida; Abributo, s\'e3o vari\'e1veis que estar\'e3o dentro de cada um dos objetos desta classe; e m\'e9todo, ser\'e3o as a\'e7\'f5es que a classe poder\'e1 realizar.\par
+\b Vantagens:\line -\b0 A reutiliza\'e7\'e3o de c\'f3digo \'e9 um dos principais requisitos no desenvolvimento de software atual. Com a complexidade dos sistemas cada vez maior, o tempo de desenvolvimento iria aumentar exponencialmente caso n\'e3o fosse poss\'edvel a reutiliza\'e7\'e3o. A orienta\'e7\'e3o a objetos permite que haja uma reutiliza\'e7\'e3o do c\'f3digo criado, diminuindo o tempo de desenvolvimento, bem como o n\'famero de linhas de c\'f3digo.\line\b\line -\b0 Os sistemas, em geral, possuem uma divis\'e3o de c\'f3digo um pouco mais l\'f3gica e melhor encapsulada do que a empregada nos sistemas n\'e3o orientados a objetos. Isto torna a manuten\'e7\'e3o e extens\'e3o do c\'f3digo mais f\'e1cil e com menos riscos de inser\'e7\'e3o de bugs. Tamb\'e9m \'e9 mais f\'e1cil reaproveitar o c\'f3digo.\par
+-\'c9 mais f\'e1cil gerenciar o desenvolvimento deste tipo de software quando temos uma equipe grande. Podemos fazer uma especifica\'e7\'e3o UML antes de iniciar o desenvolvimento do software em si, e em seguida dividirmos o sistema em classes e pacotes, e cada membro da equipe pode ficar respons\'e1vel por desenvolver uma parte do sistema.\par
+-Outra grande vantagem que o desenvolvimento orientado a objetos traz diz respeito a leitura e manuten\'e7\'e3o de c\'f3digo. Como a representa\'e7\'e3o do sistema se aproxima muito do que vemos na vida real, o entendimento do sistema como um todo e de cada parte individualmente fica muito mais simples. Isso permite que a equipe de desenvolvimento n\'e3o fique dependente de uma pessoa apenas.\par
+\b\fs30 Quest\'e3o 5\par
+\fs22 1.public class Car\par
+2.\{\par
+3. int year;  \cf1 -> Atributo - visivel em toda a classe\cf0\par
+4. String make; \cf1 -> Atributo - visivel em toda a classe\cf0\par
+5. double speed; \cf1 -> Atributo - visivel em toda a classe\cf0\par
+6.\par
+7. public Car(int y, String m, double beginningSpeed)\par
+\cf1 y, string e double - Par\'e2metros - escopo local\par
+\cf0 8. \{\par
+9. year = y;\par
+10. \}\par
+11.\par
+12. public int getYear()\par
+13. \{\par
+14. int tmp = year; \cf1 -> variavel local (primitivo)\cf0\par
+15. Roda r = new Roda(tmp); \cf1 -> variavel local (objeto)\cf0\par
+15. return year;\par
+16. \}\par
+17.\}\par
+\par
+\fs30 Quest\'e3o 6\b0\fs22\par
+A parde de c\'f3digo "*b++ = 0;", o valor de b (Que \'e9 um endere\'e7o de mem\'f3ria) \'e9 incrementado, e com isso passa a n\'e3o ser mais um endere\'e7o alocado dinamicamente. o que consequentemente torna o comando de libera\'e7\'e3o de memoria inutil o free(b) e assim gera um erro de execu\'e7\'e3o (Runtime Error), isso ocorre quando o endere\'e7o de mem\'f3ria \'e9 incrementado o que faz o programa utilizar o novo endere\'e7o que naverdade \'e9 um endere\'e7o inv\'e1lido.\b\par
+\fs30 Quest\'e3o 7\fs22\par
+a)\line\fs30 JAVA\fs22\par
+import java.util.Scanner;\par
+public class Questao7A \{\par
+\tab public static void main(String[] args) \{\par
+ \tab\tab double media=0,exam,mediafinal;\par
+\tab\tab  double n[] = new double[4];\par
+\tab\tab  int i;\par
+ \tab\tab Scanner ler = new Scanner(System.in);\par
+\tab\tab\tab for(i=0;i<4;i++)\{\par
+\tab\tab\tab  System.out.printf("Digite a N[%d] = ",i+1);\par
+ \tab\tab\tab n[i]=ler.nextDouble();\par
+\tab\tab\tab  media+=n[i];\par
+ \tab\tab\tab\}\par
+ \tab\tab\tab media/=4;\par
+\tab\tab\tab if(media>=7)\{\par
+\tab\tab\tab\tab System.out.println("Aluno APROVADO!");\par
+\tab\tab\tab\}else\{\par
+\tab\tab\tab\tab System.out.println("O aluno est\'e1 de Exame Final!\\nDigite a nota do exame: ");\par
+
+\pard\li2880\sa200\sl276\slmult1 exam=ler.nextDouble();\par
+mediafinal=(exam+media)/2;\par
+if(mediafinal>=7)\{\par
+
+\pard\sa200\sl276\slmult1\tab\tab\tab\tab\tab System.out.println("Aluno APROVADO no Exame Final!");\par
+
+\pard\li2880\sa200\sl276\slmult1\}else\{\par
+\tab System.out.println("Aluno REPROVADO!!!");\par
+
+\pard\sa200\sl276\slmult1\tab\tab\tab\tab\}\par
+\tab\tab\tab\}\par
+ \tab\tab\}\par
+\}\par
+\fs30 HASKELL\line\b0\fs22 import System.IO\par
+main = do\par
+\tab  inputjar <- getLine\par
+\tab  let n1 = read inputjar :: Double\par
+ \tab inputjar <- getLine\par
+ \tab let n2 = read inputjar :: Double\par
+ \tab inputjar <- getLine\par
+ \tab let n3 = read inputjar :: Double\par
+ \tab inputjar <- getLine\par
+ \tab let n4 = read inputjar :: Double\par
+\tab  let soma = n1 + n2 + n3 + n4\par
+ \tab let media = soma/4\par
+ \tab if media >=7.0\par
+ \tab\tab then putStrLn "APROVADO"\par
+ \tab\tab else do\par
+ \tab\tab inputjar <-getLine\par
+ \tab\tab let ex = read inputjar :: Double\par
+ \tab\tab let novamedia = (media+ex)/2\par
+\tab\tab  if novamedia >=5\par
+\tab\tab  then putStrLn "aprovado seu lixo"\par
+ \tab\tab else putStrLn "reprovado, mesmo com duas chances"\b\fs30\par
+\fs22 b)\line\fs30 JAVA\par
+\fs22 import java.util.Scanner;\par
+public class Questao7B \{\par
+\tab  public static void main(String[] args) \{\par
+ \tab\tab Scanner ler = new Scanner(System.in);\par
+ \tab\tab int n;\par
+\tab\tab  System.out.println("Digite um n\'famero qualquer");\par
+ \tab\tab n=ler.nextInt();\par
+ \tab\tab if(n%2==0)\{\par
+ \tab\tab\tab System.out.println(n+" \'e9 um n\'famero PAR...");\par
+ \tab\tab\}else\{\par
+ \tab\tab\tab System.out.println(n+" \'e9 um n\'famero IMPAR...");\par
+\tab\tab  \}\par
+ \tab\}\par
+\}\par
+\fs30 HASKELL\line\b0\fs22 import System.IO\par
+main = do\par
+\tab putStrLn "Please input a number."\par
+\tab inputjar <- getLine\par
+\tab let n = read inputjar :: Int\par
+\tab if n `mod` 2 == 0\par
+ \tab\tab then putStrLn "Par"\par
+ \tab\tab else putStrLn "Impar"\par
+\b c)\par
+\fs30 JAVA\fs22\par
+import java.util.Scanner;\par
+public class Questao7C \{\par
+ \tab public static void main(String[] args) \{\par
+\tab  Scanner ler = new Scanner(System.in);\par
+ \tab int tam,i,j;\par
+ \tab System.out.print("Digite o tamanho do vetor: ");\par
+ \tab tam=ler.nextInt();\par
+ \tab int A[] = new int[tam];\par
+ \tab for(i=0;i<tam;i++)\{\par
+ \tab\tab System.out.printf("Valor de A[%d] = ",i); A[i]=ler.nextInt();\par
+ \tab\}\par
+ \tab System.out.println("Ordem Atual do vetor:");\par
+ \tab for(i=0;i<tam;i++)\{\par
+ \tab\tab System.out.printf("Vetor A[%d] = %d\\n",i,A[i]);\par
+ \tab\}\par
+\tab  for(i=1;i<tam;i++)\{\par
+ \tab\tab j=i;\par
+ \tab\tab while(j>0 && A[j-1]>A[j])\{\par
+ \tab\tab\tab A[j-1]^=A[j];\par
+ \tab\tab\tab A[j]^=A[j-1];\par
+ \tab\tab\tab A[j-1]^=A[j];\par
+ \tab\tab\tab j=j-1;\par
+ \tab\tab\}\par
+ \tab\}\par
+ \tab System.out.println("\\nOrdem Alterada do vetor:");\par
+ \tab for(i=0;i<tam;i++)\{\par
+ \tab\tab System.out.printf("Vetor A[%d] = %d\\n",i,A[i]);\par
+ \tab\tab\}\par
+\tab  \}\par
+\}\par
+d)\par
+\fs30 JAVA\fs22\par
+import java.util.Scanner;\par
+public class Questao7D \{\par
+ \tab public static void main(String[] args) \{\par
+ \tab Scanner ler = new Scanner(System.in);\par
+ \tab int x,i,j,maior,menor;\par
+ \tab System.out.print("Digite o tamanho do Vetor = "); x=ler.nextInt();\par
+ \tab int vet[] = new int[x];\par
+ \tab for(i=0;i<x;i++)\{\par
+ \tab\tab System.out.printf("Digite o valor do Vetor[%d] = ",i);\par
+ \tab\tab vet[i]=ler.nextInt();\par
+ \tab\}\par
+ \tab maior = vet[0]; menor = vet[0];\par
+ \tab for(i=1;i<x;i++)\{\par
+ \tab\tab if(vet[i] < menor)\{\par
+ \tab\tab\tab menor = vet[i];\par
+ \tab\tab\}\par
+ \tab\tab if(vet[i] > maior)\{\par
+\tab\tab\tab  maior = vet[i];\par
+ \tab\tab\}\par
+ \tab\}\par
+ \tab System.out.printf("\\nMaior valor do vetor = %d\\nMenor valor do vetor =\par
+%d\\n",maior,menor);\par
+      \}\par
+\}\par
+\fs30 HASKELL\par
+\b0\fs22 maxi [x] = x\par
+maxi (x:xs)\par
+ \tab | x > maxi xs = x\par
+ \tab | otherwise = maxi xs\par
+mini [x] = x\par
+mini (x:xs)\par
+\tab | x < mini xs = x\par
+\tab | otherwise = mini xs\par
+}
+ 
